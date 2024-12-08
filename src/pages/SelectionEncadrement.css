@@ -1,0 +1,87 @@
+/* Container pour la page de sélection */
+.selection-encadrement-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Titre de la page */
+  .selection-encadrement-container h2 {
+    text-align: center;
+    color: #333;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 10px;
+  }
+  
+  /* Liste des projets */
+  .projects-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Item de projet */
+  .project-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .project-checkbox {
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  
+  /* Bouton de soumission */
+  .submit-button {
+    background-color: #0066cc;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .submit-button:hover {
+    background-color: #005bb5;
+  }
+  
+  /* Liste des projets sélectionnés */
+  .selected-projects {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #e7f5ff;
+    border-left: 5px solid #0066cc;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Responsive pour les petits écrans */
+  @media (max-width: 600px) {
+    .selection-encadrement-container {
+      padding: 25px;
+    }
+  
+    .submit-button {
+      padding: 12px;
+      font-size: 16px;
+    }
+  }
+  

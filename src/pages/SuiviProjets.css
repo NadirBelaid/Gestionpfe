@@ -1,0 +1,46 @@
+.suivi-projets-container {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .suivi-projets-container h2 {
+    text-align: center;
+    color: #090979;
+    margin-bottom: 20px;
+  }
+  
+  .projects-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .projects-table th,
+  .projects-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .projects-table th {
+    background-color: #006400;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .projects-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .projects-table tr:hover {
+    background-color: #e6ffe6;
+  }
+  
+  .projects-table td {
+    color: #333;
+  }
+  

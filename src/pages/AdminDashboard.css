@@ -1,0 +1,91 @@
+/* Conteneur principal */
+.admin-dashboard {
+  margin-left: 240px; /* Décalage pour correspondre à la largeur de la sidebar */
+  padding: 20px;
+  background-color: #f4f4f4;
+  min-height: 100vh; /* Remplit toute la hauteur de l'écran */
+  box-sizing: border-box; /* Inclut padding et bordures */
+}
+
+/* Ajustement de l'espace pour le contenu principal */
+.main-content {
+  margin-left: 240px;  /* Espace pour la sidebar */
+  margin-top: 80px;    /* Espace pour le header fixe */
+  padding: 20px;
+  width: calc(100% - 240px); /* Pour compenser la sidebar */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Titres des sections */
+.main-content h2, .main-content h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #090979;  /* Couleur du titre */
+  text-align: center; /* Centrer les titres si nécessaire */
+}
+
+/* Styles spécifiques à la Sidebar */
+.sidebar {
+  background-color: #ffffff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  width: 240px;
+  position: fixed;
+  top: 60px;  /* Décalage pour le header fixe */
+  left: 0;
+  padding-top: 20px;
+  transition: transform 0.3s ease;
+}
+
+/* Styles pour le Header */
+header {
+  background-color: #090979;  /* Couleur du header */
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 1.5em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+header h2 {
+  margin: 0;
+}
+
+/* Ajustements pour les écrans mobiles */
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 200px;
+    margin-top: 60px;  /* Réduire l'espacement pour les petits écrans */
+  }
+
+  .sidebar {
+    width: 200px;
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: static;
+    box-shadow: none;
+  }
+
+  .main-content {
+    margin-left: 0;
+    margin-top: 60px;  /* Réduire l'espacement pour les très petits écrans */
+  }
+
+  header {
+    position: static;
+    width: 100%;
+  }
+}
